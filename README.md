@@ -41,14 +41,3 @@ python3 get_face_info.py --
 ```
 
 # To Do
-
-## Next Up
-
-- Let get_labels iterate over all files in some folder;
-- Let ... iterate with try/...
-
-## Afterwards
-
-- Display images + labels in some pretty way
-- Produce a dummy HTML
-- Hook up a curl in front of it

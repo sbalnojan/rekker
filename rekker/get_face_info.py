@@ -45,7 +45,7 @@ def make_emo_sentence(list):
 @click.command()
 @click.option('--file', help='Your picture file', prompt="your pic")
 def main(file):
-    image_path = "data/raw/video-proto/" + file
+    image_path = "data/" + file
     print(f"Retrieving info for {image_path}")
 
     client = get_r_client()
@@ -61,4 +61,3 @@ def main(file):
 if __name__ == "__main__":
     file = "frame9.jpg"
     main()
-

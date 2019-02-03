@@ -19,14 +19,14 @@ def capture_vid():
     frame_height = int(cap.get(4))
 
     # Define the codec and create VideoWriter object.The output is stored in 'outpy.avi' file.
-    output_file_name = "data/raw/video-proto/outpy"+ str(random.randrange(1, 10000)) + ".avi"
+    output_file_name = "data/outpy"+ str(random.randrange(1, 10000)) + ".avi"
     out = cv2.VideoWriter(output_file_name, cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), 10, (frame_width, frame_height))
 
     count = 0
 
     while (True):
         ret, frame = cap.read()
-        cv2.imwrite("data/raw/video-proto/frame%d.jpg" % count, frame)
+        cv2.imwrite("data/frame%d.jpg" % count, frame)
         count += 1
 
         if ret == True:
