@@ -1,5 +1,13 @@
 # rekker
 
+```bash
+- main.py             # runs the "simple setup"
+--rekker
+--- get_face_info.py  # aws rek. functions to get info on face image
+--examples
+--- get_video.py      # script to capture video to file w. frame pics.
+```
+
 ### The Simple Setup
 
 Have a laptop somewhere with a camera; Have it run ... .
