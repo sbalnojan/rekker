@@ -9,6 +9,8 @@ __pycache__/
 # IDEA IDE
 .idea/
 
+# data items
+data/*.*
 
 # Distribution / packaging
 .Python

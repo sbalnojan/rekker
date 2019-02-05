@@ -13,8 +13,9 @@
 Have a laptop somewhere with a camera; Have it run ... .
 
 - someone approaches the camera. The video feedback is running.
-- he hits the key to capture the displayed frame.
+- he hits the key "q" to capture the displayed frame.
 - the voice appears and says "..."
+- hit "w" to stop the recording.
 
 ### The Identifier Setup
 

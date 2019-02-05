@@ -42,21 +42,26 @@ def make_emo_sentence(list):
         sentence += f"I feel {np.round(item['Confidence'],1)} percent confident, that you are {item['Type']}. "
     return sentence
 
-@click.command()
-@click.option('--file', help='Your picture file', prompt="your pic")
-def main(file):
+def main_fn(file):
     image_path = "data/" + file
     print(f"Retrieving info for {image_path}")
 
     client = get_r_client()
     resp = get_face_info(image_path,client)
-    face = resp["FaceDetails"][0]
-    #print(face)
-    for emotion in face['Emotions']:
-        print(emotion)
+    if (len(resp["FaceDetails"]) >= 2):
+        v_o_emotions("Hey, there's two of you!")
+    else:
+        face = resp["FaceDetails"][0]
+        #print(face)
+        for emotion in face['Emotions']:
+            print(emotion)
 
-    v_o_emotions(make_emo_sentence(face["Emotions"]))
+        v_o_emotions(make_emo_sentence(face["Emotions"]))
 
+@click.command()
+@click.option('--file', help='Your picture file', prompt="your pic")
+def main(file):
+    main_fn(file)
 
 if __name__ == "__main__":
     file = "frame9.jpg"
