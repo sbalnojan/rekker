@@ -50,3 +50,6 @@ python3 get_face_info.py --
 ```
 
 # To Do
+
+- The Identifier Setup
+- The Automatic Setup
