@@ -32,17 +32,12 @@ def create_collection(client,collection_id):
 
     return collection_id
 
-def delete_collection(client,collection):
-    print(client.delete_collection(CollectionId=collection))
-
 @click.command()
 @click.option('--collection-id', help='Your picture file')
 def main(collection_id):
     c = get_r_client()
-    delete_collection(c,collection_id)
     print("creating a collection...")
     new_coll = create_collection(c,collection_id)
-    delete_collection(c,new_coll)
 
 if __name__ == "__main__":
     main()

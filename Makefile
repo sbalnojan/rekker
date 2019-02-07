@@ -8,3 +8,6 @@ run:
 
 coll:
 	python3 rekker/make_collection.py --collection-id $(collection)
+
+del:
+	python3 rekker/delete_collection.py --collection-id $(collection)
