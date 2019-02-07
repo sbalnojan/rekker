@@ -19,6 +19,9 @@ Have a laptop somewhere with a camera; Have it run ... .
 
 ### The Identifier Setup
 
+- To set this up, put your collection into data/collection
+- Then run `bash make coll`
+
 - Same thing, except the voice returns "Hi I don't know you" or
   "Hi X".
 - Someone has previously executed script "..." to create the collection.
