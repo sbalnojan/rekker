@@ -11,6 +11,7 @@ __pycache__/
 
 # data items
 data/*.*
+data/
 *.mp3
 
 # Distribution / packaging
