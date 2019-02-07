@@ -52,11 +52,7 @@ def capture_vid():
     # Closes all the frames
     cv2.destroyAllWindows()
 
-def clean_folder()
-
 def main():
-
-    clean_folder("data")
     capture_vid()
 
 
