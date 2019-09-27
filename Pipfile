@@ -1,0 +1,19 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+numpy = "*"
+click = "*"
+bs4 = "*"
+boto3 = "*"
+opencv-python = "*"
+pydub = "*"
+awscli = "*"
+gTTS = "*"
+
+[requires]
+python_version = "3.7"
