@@ -10,8 +10,8 @@ __pycache__/
 .idea/
 
 # data items
-data/*.*
-data/
+data/*
+!data/.gitkeep
 *.mp3
 
 # Distribution / packaging
